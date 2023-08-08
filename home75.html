@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style75.css">
+    <link rel="stylesheet" href="utilities75.css">
+    
+    <script src="script75.js" defer></script>
+    
+    <title>JOURNEY75 | Track your progress</title>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo md"><b>JOURNEY75</b></h1>
+            <nav>
+                <a href="comingsoon.html">Workout Routines</a>
+                <a href="comingsoon.html">Diet Plans</a>
+                <div class="dropdown">
+                    <a class="dropbtn">Calculators 
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="bmi.html">BMI Calculator</a>
+                        <a href="pace.html">Pace Calculator</a>
+                            
+                    </div>  
+                </div></li>
+                <a href="About75.html">About Us</a>
+                <a href="home75.html">Home</a>
+        
+            </nav>
+        </div>
+    </div>
+
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1 class="lg"><b>Track Your 75Hard progress with “Journey75”</b></h1>
+                <p>Max out your performance with the all-in-one software platform created just for fitness.
+                    We are here to help you maintain a balance between your physical and mental fitness.</p>
+                    <a href="About75.html" class="btn btn-outline">About Us</a>
+            </div>
+
+            <div class="showcase-form card-signup">
+                <h2>Sign Up Now</h2>
+                 
+                <form action="app.js" method="post">
+                    <input type="hidden" name="form-name" value="contact">
+                    <div class="form-control" >
+                        <input type="text" id='name' name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" id="'email" placeholder="Email" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" id="'password" name="password" placeholder="Password" required>
+                    </div>
+                    <input type="submit"  class="btn btn-primary">
+
+                
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-primary">Login</button>
+                </form>
+                    <!-- Login form overlay-->
+
+                    <div id="id01" class="modal" style="width:660px;">
+                        <form class="modal-content animate" method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <img src="images/user1.png" alt="Avatar" class="avatar">
+                            </div>
+                            
+                            <div class="container-1">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                                
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                
+                                <button type="submit">Login</button>
+                                <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+                            </div>
+                            
+                            <div class="container-1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </form>
+                    </div>
+                    
+                
+                
+            </div>
+            
+    
+        </div>
+    </section>
+
+    <!--What is 75hard -->
+    <section class="wheretostart">
+        <div class="container">
+            <h2 class="wts-heading text-center my-1">
+                Where to start? 
+            </h2>
+            <p class="wts-heading text-center my-1">
+                We've got you covered!
+            </p>
+            <br>
+            <p class="wts-p text-center my-1" style="font-size: 20px;">
+                If you’re active on social media, you may have seen the hashtag #75Hard at some point. 
+                We’re here to help you make it happen. We are here to assist you and support you as you complete your transformation challenge.
+            </p>
+            <br>
+            <br>
+        </div>
+
+        <div class="gap"><br></div>
+
+    </section>
+    <!-- Rules -->
+    <section class="Rules">
+        <div class="container">
+            <h1 class="rules-heading text-center my-1"><b>Rules to Follow</b></h1>
+            <p class="rules-p text-center my-1" style="font-size: 20px;">The 75 Hard Challenge is made up of six rules which have to be completed for 
+                75 days straight. Skipping any one on any day is 
+                <b>‘non-negotiable’</b>. 
+            </p>
+            <div class="grid text-center my-4">
+                <div>
+                    <img src="images/diet.svg" width="300" height="300"> </img>
+                </div>
+                <div>
+                    <h3 class="rules-h alignL">RULE 1</h3>
+                    <h3 class="rules-h alignL">STICK TO A DIET</h3>
+                    <br>
+                    <p class="text-dark">Choose a diet and commit to it for 75 days and do not deviate. 
+                        You can set your own restrictions, but stick to it. It could involve eliminating processed 
+                        foods, sugars, or other specific dietary restrictions.<br>
+                        Choose a diet with the goal in mind to improve your health and physique ... and something that
+                        will challenge you. The entire point of 75 HARD is to challenge you.</p>
+                </div>
+                
+                <div>
+                    <h3 class="rules-h alignR">RULE 2</h3>
+                    <h3 class="rules-h alignR">EXERCISE EVERYDAY</h3>
+                    <br>
+                    <p class="text-dark">Complete two workouts, each at least 
+                        45 minutes long. One of the two workouts must be outdoors, it can be jogging, 
+                        running, skipping, a sport, yoga anything. <br>
+                    </p>
+                </div>
+                <div>
+                    <img src="images/Jogging-bro.svg" width="300" height="300"> </img>
+                </div>
+                <div>
+                    <img src="images/Yoga practice-amico.svg" width="300" height="300"> </img>
+                </div>
+                <div>
+                    <p class="text-dark">
+                        It might be hard to squeeze in two workouts a day for some people, so a relaxation of  completing one workout for atleast 1 hour 30 minutes 
+                        is allowed from time to time.<br><br>Rest days are not allowed in this chellenge. You have to work out everyday for 75 days.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="rules-h alignR">RULE 3</h3>
+                    <h3 class="rules-h alignR">DRINK 4L WATER</h3>
+                    <br>
+                    <p class="text-dark">Drink 1 gallon, i.e. approximately 4 litres of water everyday without fail.  <br><br>
+                        Bodily fluids that assist in blood circulation and nutrient consumption are thrown out of balance, potentially leading to feelings of 
+                        illness or fatigue. All these issues are triggered when your body is underhydrated and its fluid levels are out of balance. 
+                        <br><br>So have 3-4 litres of water everyday is a must to keep yourself hydrated.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/Bottle of water-amico.svg" width="300" height="300"> </img>
+                </div>
+
+                <div>
+                    <img src="images/Cocktail bartender-pana.svg" width="300" height="300"> </img>
+                </div>
+                <div>
+                    <h3 class="rules-h alignL">RULE 4</h3>
+                    <h3 class="rules-h alignL">NO ALCOHOL,</h3>
+                    <h3 class="rules-h alignL">NO CHEAT MEALS</h3>
+                    <br>
+                    <p class="text-dark">
+                        Absolutely no alcohol or cheat meals are allowed. In order to complete the 75 Hard Challenge, 
+                        and achieve your transformation goal, you must have zero alcohol for 75 days.
+                    </p>
+                </div>
+                <div>
+                    <p class="text-dark">
+                        It doesn't specify what counts as a cheat meal since you set your own diet plan. So you can set your 
+                        own rules about what is allowed and what isn't, but don't cheat yourself.<br><br>
+                        You can switch to healthier non- alcoholic alternatives, such as fruit smoothies, 
+                        if you really want to include something in your day.<br>
+                        Fix the rules in advance and stick to them, dont change them mid challenge.
+                        Breaking of any rule is non-negotiable.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/Happy hour-pana.svg" width="300" height="300"> </img>
+                </div>
+
+                <div>
+                    <img src="images/Book lover-bro.svg" width="300" height="300"> </img>
+                </div>
+                <div>
+                    <h3 class="rules-h alignL">RULE 5</h3>
+                    <h3 class="rules-h alignL">READ 10 PAGES DAILY</h3>
+                    <br>
+                    <p class="text-dark">
+                        Read atleast 10 pages of any motivational, non-fiction novel. This will help you gain more knowledge.
+                        Mental growth is equally important.<br><br>
+                        The book will be of your choice and should aim at personal development.
+                        Audiobooks are not allowed.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="rules-h alignR">RULE 6</h3>
+                    <h3 class="rules-h alignR">PROGRESS PICTURE</h3>
+                    <br>
+                    <p class="text-dark">
+                        Click a picture of  yourself everyday for 75 days and save them here with us. 
+                        No, skipping the picture is not an option. 
+                        <br>
+                        The main aim of this is for you to look at your own progress.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/Screenshot 2023-07-05 at 11.33.18 AM.png" width="300" height="400"> </img>
+                </div>
+        </div>
+
+        <p class="rules-p text-center my-1 " style="font-size: 20px;">
+            If you fail to complete any one of the above tasks on any day, you will have to start from day 1 again.
+        </p>
+
+    </section>
+
+    <!-- Startnow -->
+    <section class="startnow bg-primary my-2 py-2">
+        <div class="gap"><br></div>
+        <div class="container">
+            <div class="text-center">
+                <h2 class="md"><b>Empowering Your 75Hard Journey:<br> 
+                    Unleash Your Full Potential with "Journey75"</b><br>
+                </h2>   
+                <div class="gap"><br></div>
+                <a href="#" class="btn btn-tertiary">Start Now </a>
+            </div>
+        </div>
+        <div class="gap"><br></div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="gap"><br></div>
+
+        <h2 class="md text-center my-2">Benefits of 75Hard Challenge</h2>
+        <div class="container flex">
+            <div class="card"><h4>Confidence</h4></div>
+            <div class="card"><h4>Grit</h4></div>
+            <div class="card"><h4>Self-Belief</h4></div>
+            <div class="card"><h4>Fortitude</h4></div>
+            <div class="card"><h4>endurance</h4></div>
+            <div class="card"><h4>Perseverance</h4></div>
+              
+        </div>
+    </section>
+    <div>
+        
+        <img src="images/2002.i203.005_healthy lifestyle cartoon.jpg" alt="develop a Healthy lifestyle" > </img>
+        <div class="gap"></div>
+    </div>
+    
+
+    <!-- Startnow -->
+    <section>
+        <div class="gap"><br></div>
+        <div class="container">
+            <div class="text-center">
+                <h2 class="sm"><b>Stop waiting around and start now.<br>
+                    Sign up with us and start your transformation journey today.</b><br></h2>   
+                <div class="gap"><br></div>
+                <a href="#" class="btn btn-tertiary">Start Now </a>
+            </div>
+        </div>
+        <div class="gap-2"></div>
+    </section>
+
+    <!-- Contact Form-->
+    <section class="bg-primary">
+        <div class="gap"></div>
+    <div class="container ">
+        <h2><center><b>Get In Touch!</b></center></h2>
+        <form>
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="ustralia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">China</option>
+                        <option value="australia">Germany</option>
+                        <option value="canada">India</option>
+                        <option value="australia">Korea</option>
+                        <option value="canada">Los Angles</option>
+                        <option value="usa">Washington</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div><center>
+                <button type="submit" class="btn btn-dark " value="Submit" onclick="congrats()" >Submit</button>
+            </center></div>
+        </form>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-primary py-5">
+        <div class="container grid grid-4">
+            <div >
+                <h1><b>JOURNEY75</b></h1>
+                <p><b>Unleash your full potential</b></p>
+            </div>
+            <nav>
+                <ul><li><b>TOOLS</b></li>
+                    <li><a href="comingsoon.html">Workout Routines</a></li>
+                    <li><a href="#">To-do list</a></li>
+                    <li><a href="comingsoon.html">Diet Plans</a></li>
+                        
+                </ul>
+            </nav>
+            <nav>
+                <ul><li><b>Calculators</b></li>
+                    <li><a href="bmi.html">BMI Calculator</a></li>
+                    <li><a href="#">pre-workout dosage</a></li>
+                    <li><a href="pace.html">Pace Calculator</a></li>
+                    
+                </ul>
+            </nav>
+
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
