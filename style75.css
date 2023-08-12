@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+  --primary-color: #838EFF;
+  --secondary-color:#B6E4F9;
+  --tertiary-color: #fcb853;
+  --dark-color:rgb(36, 0, 119);
+  --light-color: #f4f4f4;
+  --success-color:#8cce6c;
+  --error-color: #d9534f;
+  
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family:  'Lato', sans-serif;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+.ul{
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+h1, h2 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 10px;
+}
+
+p {
+  margin: 10px 10px;
+}
+
+img {
+  width: 100%;
+}
+
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: var(--light-color);
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar ul a:hover , .dropdown:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  z-index:1
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: var(--primary-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Showcase */
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  margin: 20px 10px;
+}
+
+.showcase .grid {
+  overflow: visible;
+  grid-template-columns: 55% auto;
+  gap: 30px;
+}
+
+.showcase-text {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 400px;
+  width: 370px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+.showcase-form input[type='password'] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+.showcase::before,
+.showcase::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+
+input[type=text], input[type=password],input[type=email], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.container-1 {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(255, 255, 255, 0.648); 
+  background-color: #9ddffe;
+  padding-top: 60px;
+  color: white;
+  animation: slideInFromBottom 0.5s ease-in;
+
+}
+
+.modal-content {
+  background-color: whitesmoke;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover,
+.close:focus {
+  background-color: var(--error-color);
+  color: white;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+
+/* where to start */
+
+.wheretostart {
+  padding-top: 100px;
+  
+}
+
+.wts-heading {
+  max-width: 800px;
+
+  margin: auto;
+  animation: slideInFromBottom 1s ease-in;
+  text-align: justify;
+}
+.wts-p {
+  max-width: 800px;
+  margin: auto;
+  animation: slideInFromBottom 1s ease-in;
+  text-align: center;
+  font-size: 17px;
+}
+
+
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+  margin:0;
+}
+
+/* rules */
+
+.rules{
+  padding-top: 150px;
+  color: var(--dark-color)
+}
+.rules-heading{
+  max-width: 800px;
+  margin: auto;
+
+}
+.rules-p {
+  max-width: 700px;
+  margin: auto;
+  color: var(--dark-color);
+  
+}
+.rules-h {
+  font-size: 25px;
+  font-weight: bold;
+  
+}
+.alignR {
+  text-align: right;
+  animation: slideInFromRight 1s ease-in;
+}
+.alignL {
+  text-align: left;
+  animation: slideInFromLeft 1s ease-in;
+}
+
+/* Cli 
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}  */
+
+/* Start now */
+.startnow .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+/* Benefits */
+.benefits .flex {
+  flex-wrap: wrap;
+}
+
+.benefits .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+}
+
+.benefits .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.benefits  .card:hover {
+  transform: translateY(-15px);
+}
+
+/*BMI*/
+#result {
+  width: 800px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-display: bold;
+  
+}
+
+.underweight {
+  background-color: #4695F7;
+}
+
+.normal {
+  background-color: #56B43C; 
+}
+
+.overweight{
+  background-color: #E6B33D; 
+}
+
+.obese  {
+  background-color: #EE7B30;
+}
+
+.severelyobese  {
+  background-color: #CC3920;
+}
+
+/* Pace Calculator */
+
+.slow {
+  background-color: #FFAAC9; 
+}
+.moderate {
+  background-color: #71D9FF; 
+}
+.fast {
+  background-color: #ACE256;
+}
+
+#pace-result{
+  width: 800px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-display: bold;
+}
+
+/* Calculators */
+.calc-head img,
+.docs-head img {
+  width: 200px;
+  justify-self: flex-end;
+}
+
+.calc-sub-head img {
+  width: 300px;
+  justify-self: flex-end;
+}
+
+.calc-main .card > i {
+  margin-right: 20px;
+}
+
+.calc-main .grid {
+  padding: 30px;
+}
+
+/* to-do */
+
+
+
+/* Docs */
+.docs-main h3 {
+  margin: 20px 0;
+}
+
+.docs-main .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+
+.docs-main nav li {
+  font-size: 17px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px #ccc solid;
+}
+
+.docs-main a:hover {
+  font-weight: bold;
+}
+.bookgrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="number"] {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; 
+  text-align:center;
+  width: fit-content;
+ }
+
+input[type="text"]:focus{
+  border: 1px var(--secondary-color);
+  outline: 0; 
+  border-radius: 5%;
+  padding: 5px;
+}
+  
+label {
+  display: block;
+  margin-bottom: 1rem;
+  
+}
+
+/* sections in dasboard*/
+#myprofile , #Dashboard, #Calendar,#BMICalc , #pace {
+  display:none;
+}
+
+.gap{
+  padding-top: 40px;
+}
+.gap-2{
+  padding-top: 40px;
+}
+
+/* contact form */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+
+.footer{
+  background-color: var(--primary-color);
+}
+.footer .social a {
+  margin: 10px 10px;
+}
+.fa-github:hover {
+  color: #000000;
+}
+.fa-facebook:hover {
+  color: #1773EA;
+}
+.fa-instagram:hover {
+  color: #B32E87;
+}
+.fa-twitter:hover {
+  color: #1C9CEA;
+}
+
+
+/* Animations */
+/* Animations are important and changes are required */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 1000px){
+
+  .showcase-form{
+    width: 340px;
+  }
+}
+
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid,
+  .features-main .grid,
+  .docs-main .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+  
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+    animation: slideInFromBottom 1s ease-in;
+  }
+
+  
+  .calc-head,
+  .calc-sub-head,
+  .docs-head, 
+  .rules-h{
+    text-align: center;
+  }
+
+  .calc-head img,
+  .calc-sub-head img,
+  .docs-head img {
+    justify-self: center;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .showcase-form {
+    width: 300px;
+  }
+
+}
